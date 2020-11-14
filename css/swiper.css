@@ -1,0 +1,377 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.countries-slider_btn.countries-slider__btnprev:hover, .countries-slider_btn.countries-slider__btnnext:hover {
+  background: #0047FF;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__bottom .countries-slider__hover-textinfo, .swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__left .countries-slider__hover-textinfo, .swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text .countries-slider__hover-textinfo, body {
+  font-family: "GolosText-Regular";
+  font-weight: 400;
+}
+
+.swiper-container .countries-slider .countries-slider__item .countries-slider__text .countries-slider__city, .catalog .container .catalog_title {
+  font-family: "GolosText-Bold";
+  font-weight: 800;
+}
+
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__left, .swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility ease 0.2s, opacity ease 0.5s;
+  position: absolute;
+  padding: 25px 26px 15px 30px;
+  background-color: #254595;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+  width: 406px;
+  height: 250px;
+  top: 0;
+  z-index: 1000;
+}
+
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text--active {
+  display: block;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 10000;
+}
+
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__bottom .countries-slider__hover-textlink, .swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__left .countries-slider__hover-textlink, .swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text .countries-slider__hover-textlink {
+  font-family: "GolosText-Bold";
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 13px 21px;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+body {
+  background-color: #4F73CD;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.catalog {
+  margin-top: 44px;
+}
+.catalog .container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+.catalog .container .catalog_title {
+  font-size: 36px;
+  line-height: 53px;
+  color: #FFFFFF;
+  margin-bottom: 17px;
+}
+.catalog .container .mobiledropdown {
+  display: none;
+}
+.catalog .jq-selectbox.jqselect.filter-style.mobiledropdown {
+  display: none !important;
+}
+.catalog .empty_block {
+  width: 100%;
+  height: 300px;
+  background-color: transparent;
+  display: none;
+}
+.catalog .empty_block--active {
+  display: block;
+}
+
+form.filter {
+  width: 100%;
+}
+
+.countries-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.countries-tabs .tab {
+  font-family: "GolosText-Regular";
+  font-weight: 500;
+  color: #FFFFFF;
+  height: 36px;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.countries-tabs .tab.tab--active {
+  padding: 8px 20px;
+  background-color: #80A0F2;
+  border-radius: 8px;
+  transform: translateY(-25%);
+}
+.countries-tabs .tab.tab:hover {
+  padding: 8px 20px;
+  background-color: #A5BEFF;
+  border-radius: 8px;
+  transform: translateY(-25%);
+}
+.countries-tabs .tab + .tab {
+  margin-left: 34px;
+}
+
+.swiper-container {
+  width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+.swiper-container .countries-slider .countries-slider__item {
+  width: 170px;
+  height: 250px;
+  display: block;
+  margin-right: 0;
+  position: relative;
+  cursor: pointer;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 8px;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__text {
+  position: absolute;
+  bottom: 17px;
+  left: 12px;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text {
+  right: -400px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text .countries-slider__hover-textinfo {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 27px;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text .countries-slider__hover-textlink {
+  transition: all 0.4s;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text .countries-slider__hover-textlink:hover {
+  background-color: #0047FE;
+  border: 2px solid #0047FE;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__left {
+  left: -400px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__left .countries-slider__hover-textinfo {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 27px;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__left .countries-slider__hover-textlink {
+  transition: all 0.4s;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__left .countries-slider__hover-textlink:hover {
+  background-color: #0047FE;
+  border: 2px solid #0047FE;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__bottom {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility ease 0.2s, opacity ease 0.5s;
+  position: absolute;
+  padding: 25px 26px 15px 30px;
+  background-color: #254595;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+  height: 260px;
+  top: 240px;
+  left: 0;
+  z-index: 1000;
+  max-width: 100%;
+  bottom: -250px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__bottom .countries-slider__hover-textinfo {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 27px;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__bottom .countries-slider__hover-textlink {
+  transition: all 0.4s;
+}
+.swiper-container .countries-slider .countries-slider__item .countries-slider__hover-text__bottom .countries-slider__hover-textlink:hover {
+  background-color: #0047FE;
+  border: 2px solid #0047FE;
+}
+.swiper-container .countries-slider .countries-slider__item.non-swiper-slide {
+  display: none !important;
+}
+.swiper-container .countries-slider .swiper-slide_mobile {
+  width: 335px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+}
+.swiper-container .countries-slider .swiper-slide_mobile .countries-slider__text {
+  bottom: 55%;
+}
+
+.swiper-container.swiper-container-multirow.swiper-container-initialized.swiper-container-horizontal.swiper-container-android.swiper-container--active {
+  position: absolute;
+  top: 500px;
+}
+
+.countries-slider_btn {
+  width: 12px;
+  height: 19px;
+  top: 61%;
+  border: none;
+  outline: none;
+}
+.countries-slider_btn.countries-slider__btnnext {
+  right: -65px;
+  transition: all 0.3s;
+}
+.countries-slider_btn.countries-slider__btnnext:hover {
+  right: -79px;
+  top: 59.4%;
+}
+.countries-slider_btn.countries-slider__btnprev {
+  left: -65px;
+  transition: all 0.3s;
+}
+.countries-slider_btn.countries-slider__btnprev:hover {
+  left: -79px;
+  top: 59.3%;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.35;
+  pointer-events: visible;
+}
+
+.countries-slider_btn--newswiper {
+  top: 70%;
+}
+
+.swiper-pagination_none {
+  display: none;
+}
+
+.swiper-pagination {
+  position: absolute;
+  width: 90%;
+  bottom: -50px;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  margin-bottom: 20px;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #fff;
+  opacity: 1;
+  border: none;
+  outline: none;
+}
+.swiper-pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 10px;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #0047FF;
+}

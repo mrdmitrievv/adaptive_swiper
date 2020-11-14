@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <section class="catalog">
+    <div class="container">
+      <h1 class="catalog_title">Наши направления</h1>
+      <form class="filter">
+        <div class="tabs countries-tabs">
+          <div class="tab tab--active" data-search="all">Все страны</div>
+          <div class="tab" data-search="italy">Италия</div>
+          <div class="tab" data-search="germany">Германия</div>
+          <div class="tab" data-search="greece">Греция</div>
+          <div class="tab" data-search="turkey">Турция</div>
+          <div class="tab mobile_tab" data-search="spain">Испания</div>
+          <div class="tab mobile_tab" data-search="portugal">Португалия</div>
+        </div>
+      </form>
+          <select class="filter-style mobiledropdown">
+            <option class="mobiledropdown_item">Все направления</option>
+            <option class="mobiledropdown_item">Италия</option>
+            <option class="mobiledropdown_item">Германия</option>
+            <option class="mobiledropdown_item">Греция</option>
+            <option class="mobiledropdown_item">Турция</option>
+            <option class="mobiledropdown_item">Испания</option>
+            <option class="mobiledropdown_item">Португалия</option>
+          </select>
+          <div class="empty_block"></div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper countries-slider">
+              <div class="swiper-slide countries-slider__item" data-value="italy">
+                <img class="countries-slider__img" src="img/Milan.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Милан</h4>
+                  <p class="countries-slider__country">Италия</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="germany">
+                <img class="countries-slider__img" src="img/Fraiburg.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Фрайбург</h4>
+                  <p class="countries-slider__country">Германия</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="portugal">
+                <img class="countries-slider__img" src="img/Lissabon.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Лиссабон</h4>
+                  <p class="countries-slider__country">Португалия</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="italy">
+                <img class="countries-slider__img" src="img/Vichenza.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Виченца</h4>
+                  <p class="countries-slider__country">Италия</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="spain">
+                <img class="countries-slider__img" src="img/Barcelona.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Барселона</h4>
+                  <p class="countries-slider__country">Испания</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="portugal">
+                <img class="countries-slider__img" src="img/Portu.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Порту</h4>
+                  <p class="countries-slider__country">Португалия</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="italy">
+                <img class="countries-slider__img" src="img/genua.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Генуа</h4>
+                  <p class="countries-slider__country">Италия</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="spain">
+                <img class="countries-slider__img" src="img/valencia.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Валенсия</h4>
+                  <p class="countries-slider__country">Испания</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="greece">
+                <img class="countries-slider__img" src="img/saloniki.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Салоники</h4>
+                  <p class="countries-slider__country">Греция</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="greece">
+                <img class="countries-slider__img" src="img/Afines.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Афины</h4>
+                  <p class="countries-slider__country">Греция</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="turkey">
+                <img class="countries-slider__img" src="img/Kash.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Каш</h4>
+                  <p class="countries-slider__country">Турция</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="spain">
+                <img class="countries-slider__img" src="img/Madrid.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Мадрид</h4>
+                  <p class="countries-slider__country">Испания</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="germany">
+                <img class="countries-slider__img" src="img/Berlin.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Берлин</h4>
+                  <p class="countries-slider__country">Германия</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="turkey">
+                <img class="countries-slider__img countries-slider__img--ratio" src="img/Antaliya.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Анталия</h4>
+                  <p class="countries-slider__country">Турция</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="italy">
+                <img class="countries-slider__img" src="img/Venezia1.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Венеция</h4>
+                  <p class="countries-slider__country">Италия</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="portugal">
+                <img class="countries-slider__img" src="img/guarda.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Гуарда</h4>
+                  <p class="countries-slider__country">Португалия</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="italy">
+                <img class="countries-slider__img" src="img/padua.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Падуя</h4>
+                  <p class="countries-slider__country">Италия</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide countries-slider__item" data-value="turkey">
+                <img class="countries-slider__img" src="img/istanbul.png">
+                <div class="countries-slider__text">
+                  <h4 class="countries-slider__city">Стамбул</h4>
+                  <p class="countries-slider__country">Турция</p>
+                </div>
+                <div class="countries-slider__hover-text">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__left">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+                <div class="countries-slider__hover-text__bottom">
+                  <p class="countries-slider__hover-textinfo">Фрайбург-им-Брайсгау – оживленный
+                    университетский город в
+                    горах Шварцвальд на юго-западе Германии, известный своим умеренным климатом
+                    и восстановленным после войны средневековым Старым городом.</p>
+                  <a class="countries-slider__hover-textlink" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next countries-slider_btn countries-slider__btnnext"><img src="img/btnnext.svg"></div>
+          <div class="swiper-button-prev countries-slider_btn countries-slider__btnprev"><img src="img/btnprev.svg"></div>
+    </div>
+  </section>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+  <script type="text/javascript" src="js/swiper.js"></script>
+</body>
+
+</html>
